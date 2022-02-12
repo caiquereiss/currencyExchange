@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Casa do câmbio</title>
+</head>
+<body>
+  <header>
+    <h1>Casa do Câmbio</h1>
+  </header>
+  <main>
+    <h2>Selecione a moeda da conversão</h2>
+
+    <label for="value">Valor: </label>
+    <input type="number" name="value" id="value">
+
+    <label for="of-currency">Da moeda: </label>
+    <select  name="ofcurrency" id="of-currency">
+      <option value=""></option>
+      <option value="BR">Real Brasil</option>
+      <option value="USD">Dólar dos Estados Unidos</option>
+      <option value="EUR">Zona Euro</option>
+      <option value="CLP">Peso Chileno</option>
+    </select>
+
+    <label for="for-currency">Para moeda: </label>
+    <select name="for-currency" id="for-currency">
+      <option value=""></option>
+      <option value="BR">Real Brasil</option>
+      <option value="USD">Dólar dos Estados Unidos</option>
+      <option value="EUR">Zona Euro</option>
+      <option value="CLP">Peso Chileno</option>
+    </select>
+    <button id="to-convert" onclick="toConvert()">Converter</button>
+    <section id="section">
+      <span id="text-currency"></span>
+      <p id="conversion"></p>
+    </section>
+    
+  </main>
+
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
