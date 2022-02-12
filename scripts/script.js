@@ -118,6 +118,7 @@ function convertEUR(){
       sum += (value * valueOne) / valueTwo;
       document.getElementById('text-currency').innerHTML = "EUR " + value.toFixed(2).replace('.', ',') + " =" ;
       document.getElementById('conversion').innerHTML = "CLP " + sum.toFixed(4).replace('.', ',');
+      console.log(sum);
 
   }
 return;
@@ -162,5 +163,7 @@ function toConvert(){
   convertUSD();
   convertEUR();
   convertCLP();
+
+  
 }
 
